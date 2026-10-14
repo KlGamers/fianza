@@ -1,0 +1,8 @@
+[run]
+plugins = boa.coverage
+source = contracts
+omit = tests/*
+
+[report]
+show_missing = true
+fail_under = 100

@@ -64,8 +64,11 @@ Los plazos se fijan al desplegar el contrato y no se pueden cambiar.
 
 ```sh
 pip install -r requirements-dev.txt
-pytest -q tests
+pytest -q tests --cov --cov-config=.coveragerc
 ```
+
+Las pruebas cubren el 100% de las instrucciones del contrato, y el CI falla
+si alguna línea queda sin probar.
 
 - **Unitarias:** cada función, cada mensaje de error, cada plazo y cada
   permiso.

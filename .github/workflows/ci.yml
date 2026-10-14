@@ -15,4 +15,4 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements-dev.txt
       - run: vyper contracts/Fianza.vy > /dev/null
-      - run: pytest -q tests
+      - run: pytest -q tests --cov --cov-config=.coveragerc
